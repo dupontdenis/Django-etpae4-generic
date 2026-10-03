@@ -1,0 +1,9 @@
+<h1>Liste des personnes</h1>
+
+<ul>
+{% for p in persons %}
+    <li>{{ p.first_name }} {{ p.last_name }}</li>
+{% endfor %}
+</ul>
+
+<a href="/create/">Ajouter une personne</a>

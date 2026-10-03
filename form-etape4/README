@@ -1,0 +1,46 @@
+# README — Lancer le projet après clonage
+
+## 1. Cloner le dépôt
+
+```bash
+git clone <URL_DU_DEPOT>
+cd form-etape4
+```
+
+## 2. Créer et activer l’environnement virtuel
+
+```bash
+python -m venv .venv
+.\.venv\Scripts\activate
+```
+
+## 3. Installer les dépendances
+
+```bash
+pip install -r requirements.txt
+```
+
+## 4. Préparer la base de données
+
+Si `db.sqlite3` n’est pas présent, exécuter :
+
+```bash
+python manage.py migrate
+```
+
+## 5. (Optionnel) Créer un superutilisateur
+
+```bash
+python manage.py createsuperuser
+```
+
+## 6. Lancer le serveur
+
+```bash
+python manage.py runserver
+```
+
+### Accès
+
+* **Liste :** http://127.0.0.1:8000/
+* **Création :** http://127.0.0.1:8000/create/
